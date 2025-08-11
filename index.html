@@ -3,51 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Penelope Machafa | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>About Penelope Machafa</title>
+  <style>
+    :root {
+      --ice-castle: #B6D5D8;
+      --buttercup: #FDD888;
+      --bermuda: #78D1C4;
+      --azalea: #FD7899;
+      --candyfloss: #FCEEEE;
+      --tropical-teal: #148B9C;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--ice-castle);
+      color: var(--tropical-teal);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--bermuda);
+      padding: 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background-color: var(--candyfloss);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: var(--azalea);
+      margin-bottom: 1rem;
+    }
+
+    .highlight {
+      background-color: var(--buttercup);
+      padding: 0.5rem;
+      border-radius: 6px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .cta {
+      background-color: var(--azalea);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }
+
+    .cta a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .timeline {
+      border-left: 4px solid var(--bermuda);
+      padding-left: 1rem;
+    }
+
+    .timeline-item {
+      margin-bottom: 1rem;
+    }
+
+    .quote {
+      font-style: italic;
+      color: var(--tropical-teal);
+      border-left: 4px solid var(--buttercup);
+      padding-left: 1rem;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 <body>
 
-  <header id="hero">
+  <header>
     <h1>Penelope Machafa</h1>
-    <p>Smart. Enthusiastic. Confident. Ready to shine anywhere.</p>
-    <div class="floating-shape"></div>
-    <div class="floating-shape"></div>
+    <p>IT Manager • Educator • Entrepreneur</p>
   </header>
 
-  <section id="about">
-    <h2>🌱 My Journey</h2>
+  <section>
+    <h2>Identity</h2>
     <p>
-      I studied Informatics and Telecommunication Engineering at <strong>ISUTC</strong>, where I cultivated both technical expertise and leadership skills.
-      As a <strong>Toastmasters Vice President of Education</strong>, I mentored speakers and organized impactful sessions.
-      I’ve worked as a <strong>freelance tester</strong>, <strong>QA analyst</strong>, and <strong>project manager</strong>, ensuring quality and clarity in every step of development.
+      <span class="highlight">“I turn complexity into clarity.”</span><br />
+      I’m Penelope Machafa—an infrastructure-savvy IT manager, educator, and entrepreneur who thrives on solving technical challenges and empowering others to grow.
     </p>
   </section>
 
-  <section id="hobbies">
-    <h2>🎧 My Passions</h2>
-    <ul>
-      <li>🎬 Watching movies that inspire and challenge</li>
-      <li>📚 Learning something new every single day</li>
-      <li>🏛️ Exploring architectural design and aesthetics</li>
-      <li>🎶 Listening to good music that moves the soul</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>📬 Contact</h2>
-    <div>
-      <span class="icon" onclick="openLinkedIn()">🔗 LinkedIn</span>
-      <span class="icon">🐙 GitHub</span>
-      <span class="icon">✉️ Email</span>
+  <section>
+    <h2>My Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item"><strong>2021–2025:</strong> Studied Informatics & Telecommunication Engineering at ISUTC</div>
+      <div class="timeline-item"><strong>2023:</strong> Toastmasters VPE, mentoring speakers and organizing impactful sessions</div>
+      <div class="timeline-item"><strong>2024–2025:</strong> Freelance QA Analyst, Tester, and Project Manager</div>
     </div>
   </section>
 
-  <div class="modal" id="linkedinModal">
-    <span class="modal-close" onclick="closeLinkedIn()">✖</span>
-    <iframe src="https://linkedin.com/in/penelopesydneymachafa"></iframe>
-  </div>
+  <section>
+    <h2>Values & Philosophy</h2>
+    <p>
+      I believe technology should serve people—not the other way around. My work is guided by empathy, clarity, and community impact. Whether I’m leading a team or teaching ICT, I focus on making systems meaningful and accessible.
+    </p>
+    <div class="quote">
+      “Empathy and precision are not opposites—they’re my toolkit.”
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <section>
+    <h2>Outside Work</h2>
+    <ul>
+      <li>Watching movies that inspire and challenge</li>
+      <li>Learning something new every single day</li>
+      <li>Exploring architectural design and aesthetics</li>
+      <li>Listening to music that moves the soul</li>
+    </ul>
+  </section>
+
+  <section class="cta">
+    Let’s build something meaningful together. <a href="mailto:penelope@example.com">Reach out</a> if you need tech clarity, strategic support, or a fresh perspective.
+  </section>
+
 </body>
 </html>
