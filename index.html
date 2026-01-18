@@ -1,151 +1,304 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Penelope Machafa</title>
-  <style>
-    :root {
-      --ice-castle: #B6D5D8;
-      --buttercup: #FDD888;
-      --bermuda: #78D1C4;
-      --azalea: #FD7899;
-      --candyfloss: #FCEEEE;
-      --tropical-teal: #148B9C;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--ice-castle);
-      color: var(--tropical-teal);
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: var(--bermuda);
-      padding: 2rem;
-      text-align: center;
-      color: white;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      background-color: var(--candyfloss);
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-
-    h2 {
-      color: var(--azalea);
-      margin-bottom: 1rem;
-    }
-
-    .highlight {
-      background-color: var(--buttercup);
-      padding: 0.5rem;
-      border-radius: 6px;
-      display: inline-block;
-      font-weight: bold;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    .cta {
-      background-color: var(--azalea);
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      border-radius: 8px;
-      font-size: 1.2rem;
-      margin-top: 2rem;
-    }
-
-    .cta a {
-      color: white;
-      text-decoration: underline;
-    }
-
-    .timeline {
-      border-left: 4px solid var(--bermuda);
-      padding-left: 1rem;
-    }
-
-    .timeline-item {
-      margin-bottom: 1rem;
-    }
-
-    .quote {
-      font-style: italic;
-      color: var(--tropical-teal);
-      border-left: 4px solid var(--buttercup);
-      padding-left: 1rem;
-      margin-top: 1rem;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Penélope Sydney Machafa: CV</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <h1>Penelope Machafa</h1>
-    <p>IT Manager • Educator • Entrepreneur</p>
+    <button id="lang-toggle" aria-label="Mudar idioma">EN</button>
+    <h1 id="name">Penélope Sydney Machafa</h1>
+    <p id="subtitle">Engenheira de Telecomunicações & Informática | Web Developer | Administradora de Sistemas</p>
   </header>
 
-  <section>
-    <h2>Identity</h2>
-    <p>
-      <span class="highlight">“I turn complexity into clarity.”</span><br />
-      I’m Penelope Machafa—an infrastructure-savvy IT manager, educator, and entrepreneur who thrives on solving technical challenges and empowering others to grow.
-    </p>
-  </section>
-
-  <section>
-    <h2>My Journey</h2>
-    <div class="timeline">
-      <div class="timeline-item"><strong>2021–2025:</strong> Studied Informatics & Telecommunication Engineering at ISUTC</div>
-      <div class="timeline-item"><strong>2023:</strong> Toastmasters VPE, mentoring speakers and organizing impactful sessions</div>
-      <div class="timeline-item"><strong>2024–2025:</strong> Freelance QA Analyst, Tester, and Project Manager</div>
+  <section class="profile" aria-label="Perfil">
+    <div class="photo">
+      <!-- Substitua profile.jpg pela tua foto -->
+      <img id="profile-photo" src="/home/penelope/Downloads/1746185859201.jpg" alt="Foto de Penélope Sydney Machafa">
+    </div>
+    <div class="bio">
+      <p id="tagline"><em>“Ola...<br>Gosto de assistir e analisar filmes e animações, decorar salas de aulas de escolinhas e dar aulas extras de ICT. Sou apaixonada por doces — bolo, chocolate e ananás são meus favoritos. Prefiro trabalhar sozinha, mas valorizo o poder do coletivo em projetos que realmente importam. Minha curiosidade me permite adaptar-me com facilidade a ambientes dinâmicos e saltar entre múltiplos projetos sem perder o foco. Aprendo idiomas porque, como cabos em redes, eles conectam pessoas — e adoro análises políticas e geopolíticas, pois me ajudam a entender melhor o mundo ao meu redor.”</em></p>
+      <p id="contact-line">
+        <strong id="phone">📞 +258 855872316</strong> &nbsp; • &nbsp;
+        <a id="github" href="https://github.com/machafa" target="_blank" rel="noopener">GitHub</a> &nbsp; • &nbsp;
+        <span id="location">Maputo, Mozambique</span>
+      </p>
     </div>
   </section>
 
-  <section>
-    <h2>Values & Philosophy</h2>
-    <p>
-      I believe technology should serve people—not the other way around. My work is guided by empathy, clarity, and community impact. Whether I’m leading a team or teaching ICT, I focus on making systems meaningful and accessible.
-    </p>
-    <div class="quote">
-      “Empathy and precision are not opposites—they’re my toolkit.”
-    </div>
-  </section>
+  <nav role="navigation" aria-label="Navegação principal">
+    <a href="#about" id="nav-about">Sobre Mim</a>
+    <a href="#skills" id="nav-skills">Competências</a>
+    <a href="#experience" id="nav-experience">Experiência</a>
+    <a href="#projects" id="nav-projects">Projetos</a>
+    <a href="#education" id="nav-education">Educação</a>
+    <a href="#contact" id="nav-contact">Contacto</a>
+  </nav>
 
-  <section>
-    <h2>Outside Work</h2>
-    <ul>
-      <li>Watching movies that inspire and challenge</li>
-      <li>Learning something new every single day</li>
-      <li>Exploring architectural design and aesthetics</li>
-      <li>Listening to music that moves the soul</li>
-    </ul>
-  </section>
+  <main>
+    <section id="about">
+      <h2 id="about-title">Sobre Mim</h2>
+      <p id="about-text">Sou graduada em IT & Telecom, movida pela busca por ordem nos dados e beleza no código. Transformo informação em clareza, sistemas em serviço e tecnologia em ponte para o impacto humanitário. Vice-Presidente de Educação no Toastmasters Maputo, vencedora de concursos de discurso e mentora de jovens em literacia digital — porque liderar é, antes de tudo, capacitar outros a encontrar a sua voz.</p>
+    </section>
 
-  <section class="cta">
-    Let’s build something meaningful together. <a href="mailto:penelope@example.com">Reach out</a> if you need tech clarity, strategic support, or a fresh perspective.
-  </section>
+    <section id="skills">
+      <h2 id="skills-title">Competências</h2>
+      <div class="grid">
+        <div class="card" id="skill1"><strong>Programação:</strong> Python, Java, JavaScript, JSP, PHP, C#, ASP.NET</div>
+        <div class="card" id="skill2"><strong>Web Dev:</strong> HTML, CSS, API Integration, Responsive Design</div>
+        <div class="card" id="skill3"><strong>Bases de Dados:</strong> MySQL, MSSQL, SQLite</div>
+        <div class="card" id="skill4"><strong>Ferramentas de Dados:</strong> Power BI, KoBoToolbox, Excel</div>
+        <div class="card" id="skill5"><strong>QA & Testing:</strong> Testlio, Meta AI for WhatsApp</div>
+        <div class="card" id="skill6"><strong>Idiomas:</strong> Inglês, Português</div>
+      </div>
+    </section>
 
+    <section id="experience">
+      <h2 id="experience-title">Experiência</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>ICT Teacher & IT Support</strong><br>
+          Enko Maputo — 2023–2025<br>
+          <small>Entreguei currículo de TIC, mentoria em literacia digital e suporte de infraestrutura.</small>
+        </div>
+        <div class="card">
+          <strong>QA Tester</strong><br>
+          Testlio - Freelancer - 2022 - Actualmente<br>
+          <small>Testes funcionais e relatórios de qualidade para features de IA conversacional.</small>
+        </div>
+        <div class="card">
+          <strong>Data Entry Clerk</strong><br>
+          Freelancer — 2018–2020<br>
+          <small>Entrada e validação de grandes conjuntos de dados; migração para Excel.</small>
+        </div>
+        <div class="card">
+          <strong>Vice Presidente Educação</strong><br>
+          Toastmasters Maputo — 2024–2025<br>
+          <small>Coordenei programas de formação e concursos de oratória.</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 id="projects-title">Projetos</h2>
+      <div class="grid">
+        <!-- Project 1 -->
+        <div class="card">
+          <h3>Portal Responsivo de Viagens (ChTravel)</h3>
+          <div class="iframe-wrap" aria-hidden="false">
+            <!-- Substitua o src pelo URL real do teu projeto -->
+            <iframe src="https://machafa.github.io/chtravels/" title="ChTravel demo"></iframe>
+          </div>
+          <div class="project-actions">
+            <a class="project-btn" href="https://machafa.github.io/chtravels/" target="_blank" rel="noopener">Abrir em nova aba</a>
+          
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card">
+          <h3>Savings Website</h3>
+          <div class="iframe-wrap">
+            <iframe src="https://machafa.github.io/Savings-web/" title="Savings demo"></iframe>
+          </div>
+          <div class="project-actions">
+            <a class="project-btn" href="https://machafa.github.io/Savings-web/" target="_blank" rel="noopener">Abrir em nova aba</a>
+          
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card">
+          <h3>Aplicação de Notas (Evernote-style)</h3>
+          <div class="iframe-wrap">
+            <iframe src="https://machafa.github.io/notes/" title="Notes app demo"></iframe>
+          </div>
+          <div class="project-actions">
+            <a class="project-btn" href="https://machafa.github.io/notes/" target="_blank" rel="noopener">Abrir em nova aba</a>
+           
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="card">
+          <h3>Python Login Program (SQLite)</h3>
+          <div class="iframe-wrap">
+            <iframe src="https://github.com/machafa/python-sqlite" title="Python login demo"></iframe>
+          </div>
+          <div class="project-actions">
+            <a class="project-btn" href="https://github.com/machafa/python-sqlite" target="_blank" rel="noopener">Abrir em nova aba</a>
+            <a class="project-btn" href="https://github.com/machafa/python-sqlite" target="_blank" rel="noopener">Ver no GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="card">
+          <h3>Dashboards Humanitários (Power BI)</h3>
+          <div class="iframe-wrap">
+            <!-- Power BI embed links often require public sharing; replace with your dashboard URL -->
+            <iframe src="https://app.powerbi.com/view?r=EXAMPLE" title="Power BI dashboard"></iframe>
+          </div>
+          <div class="project-actions">
+            <a class="project-btn" href="https://app.powerbi.com/view?r=EXAMPLE" target="_blank" rel="noopener">Abrir em nova aba</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2 id="education-title">Educação</h2>
+      <div class="card">
+        <strong>Licenciatura em Informatica e Telecomunicação</strong><br>
+        Instituto Superior de Transporte e Comunicação — 2018–2025<br>
+        <small>Computer Science, Telecommunications, Networking, Systems Administration</small>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 id="contact-title">Contacto</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Telefone</strong><br>
+          <a id="phone-link" href="tel:+258855872316">+258 855 872 316</a>
+        </div>
+        <div class="card">
+          <strong>Email</strong><br>
+          <a id="email-link" href="mailto:penelopesydney80@gmail.com">penelopesydney80@gmail.com</a>
+        </div>
+        <div class="card">
+          <strong>Localização</strong><br>
+          Maputo, Mozambique
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small id="footer-text">© 2026 Penélope Sydney</small>
+  </footer>
+
+  <script>
+    // Traduções PT / EN
+    const texts = {
+      pt: {
+        langBtn: 'EN',
+        nav: ['Sobre Mim','Competências','Experiência','Projetos','Educação','Contacto'],
+        subtitle: 'Engenheira de Telecomunicações & Informática | Web Developer | Administradora de Sistemas',
+        aboutTitle: 'Sobre Mim',
+        aboutText: 'SGosto de assistir e analisar filmes e animações, decorar salas de aulas de escolinhas e dar aulas extras de ICT. Sou apaixonada por doces — bolo, chocolate e ananás são meus favoritos. Prefiro trabalhar sozinha, mas valorizo o poder do coletivo em projetos que realmente importam. Minha curiosidade me permite adaptar-me com facilidade a ambientes dinâmicos e saltar entre múltiplos projetos sem perder o foco. Aprendo idiomas porque, como cabos em redes, eles conectam pessoas — e adoro análises políticas e geopolíticas, pois me ajudam a entender melhor o mundo ao meu redor.',
+        skillsTitle: 'Competências',
+        experienceTitle: 'Experiência',
+        projectsTitle: 'Projetos',
+        educationTitle: 'Educação',
+        contactTitle: 'Contacto',
+        footer: '© 2026 Penélope Sydney Machafa — Criado com HTML, CSS e um toque de carinho',
+        openNew: 'Abrir em nova aba',
+        viewGit: 'Ver no GitHub'
+      },
+      en: {
+        langBtn: 'PT',
+        nav: ['About','Skills','Experience','Projects','Education','Contact'],
+        subtitle: 'Telecom & IT Engineer | Web Developer | Systems Administrator',
+        aboutTitle: 'About Me',
+        aboutText: 'I love watching and analyzing films and animations, decorating preschool classrooms, and giving extra ICT lessons. I’m a big fan of sweets—cake, chocolate, and pineapple are my favorites. I prefer working alone, but I truly value teamwork when it comes to meaningful projects. My curiosity helps me adapt easily to dynamic environments and switch between multiple projects without losing focus. I learn languages because, like network cables, they connect people—and I’m passionate about political and geopolitical analysis, as it helps me better understand the world around me.',
+        skillsTitle: 'Skills',
+        experienceTitle: 'Experience',
+        projectsTitle: 'Projects',
+        educationTitle: 'Education',
+        contactTitle: 'Contact',
+        footer: '© 2026 Penélope Sydney Machafa — Built with HTML & CSS',
+        openNew: 'Open in new tab',
+        viewGit: 'View on GitHub'
+      }
+    };
+
+    // Estado inicial
+    let currentLang = 'pt';
+
+    // Elementos
+    const langBtn = document.getElementById('lang-toggle');
+    const navLinks = [
+      document.getElementById('nav-about'),
+      document.getElementById('nav-skills'),
+      document.getElementById('nav-experience'),
+      document.getElementById('nav-projects'),
+      document.getElementById('nav-education'),
+      document.getElementById('nav-contact')
+    ];
+    const subtitle = document.getElementById('subtitle');
+    const aboutTitle = document.getElementById('about-title');
+    const aboutText = document.getElementById('about-text');
+    const skillsTitle = document.getElementById('skills-title');
+    const experienceTitle = document.getElementById('experience-title');
+    const projectsTitle = document.getElementById('projects-title');
+    const educationTitle = document.getElementById('education-title');
+    const contactTitle = document.getElementById('contact-title');
+    const footerText = document.getElementById('footer-text');
+
+    // Project buttons text (dynamic)
+    function updateProjectButtons(lang){
+      const btns = document.querySelectorAll('.project-btn');
+      btns.forEach(btn=>{
+        // keep link but update label heuristically
+        if(btn.href.includes('github')) btn.textContent = texts[lang].viewGit;
+        else btn.textContent = texts[lang].openNew;
+      });
+    }
+
+    // Fade helper for smoother language switch
+    function fadeText(el, newText){
+      el.style.transition = 'opacity .18s ease';
+      el.style.opacity = 0;
+      setTimeout(()=>{
+        el.textContent = newText;
+        el.style.opacity = 1;
+      },200);
+    }
+
+    // Toggle language
+    langBtn.addEventListener('click', ()=>{
+      currentLang = currentLang === 'pt' ? 'en' : 'pt';
+      const t = texts[currentLang];
+
+      // update button label
+      langBtn.textContent = t.langBtn;
+
+      // nav
+      navLinks.forEach((a,i)=> fadeText(a, t.nav[i]));
+
+      // subtitle and section titles
+      fadeText(subtitle, t.subtitle);
+      fadeText(aboutTitle, t.aboutTitle);
+      fadeText(aboutText, t.aboutText);
+      fadeText(skillsTitle, t.skillsTitle);
+      fadeText(experienceTitle, t.experienceTitle);
+      fadeText(projectsTitle, t.projectsTitle);
+      fadeText(educationTitle, t.educationTitle);
+      fadeText(contactTitle, t.contactTitle);
+      fadeText(footerText, t.footer);
+
+      // project buttons
+      updateProjectButtons(currentLang);
+    });
+
+    // Inicializa textos dos botões de projeto
+    updateProjectButtons(currentLang);
+
+    // Small enhancement: lazy-load iframes when project section enters viewport
+    const iframes = document.querySelectorAll('iframe');
+    const io = new IntersectionObserver((entries, obs)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          const frame = entry.target;
+          // if data-src exists, set it (we used src directly above; this is optional)
+          if(frame.dataset.src) frame.src = frame.dataset.src;
+          obs.unobserve(frame);
+        }
+      });
+    }, {rootMargin:'200px'});
+    iframes.forEach(f => io.observe(f));
+  </script>
 </body>
 </html>
